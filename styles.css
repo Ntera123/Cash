@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cover {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, gold, white);
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.pin-input {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="password"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: green;
+}
+
+button.glow {
+    animation: glowing 1500ms infinite;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 5px green; }
+    50% { box-shadow: 0 0 20px green; }
+    100% { box-shadow: 0 0 5px green; }
+}
